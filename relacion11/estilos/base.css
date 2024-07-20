@@ -1,0 +1,287 @@
+@charset "UTF8";
+
+
+/*fuente para el texto*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*logo*/
+#logo {
+    border-radius: 20px;
+    animation: animacion 5s infinite ; /*animacion para girar toda la imagen*/
+}
+
+#logo:hover {
+    animation: animacionHover 5s infinite; /*animacion para girar toda la imagen*/
+}
+
+@keyframes animacion{ /*animacion para rotar logo del header*/
+    0%{
+        transform: rotateY(0deg); /*primer fotograma*/
+    }
+    100%{
+        transform: rotateY(365deg); /*ultimo fotograma*/
+    }
+}
+
+
+@keyframes animacionHover{ /*animacion para rotar logo del header*/
+    0%{
+        transform: rotateX(0deg); /*primer fotograma*/
+    }
+    100%{
+        transform: rotateX(365deg); /*ultimo fotograma*/
+    }
+}
+
+/*logo de iconos*/
+.icono{
+    width: 5%;
+}
+
+/*estilo formularios */
+.formulario input:hover {
+    border-color: red;
+}
+
+.formulario fieldset{
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+.formulario legend{
+    background-color: white; 
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+#opciones img {
+    width: 17%;
+}
+
+#opciones2 img {
+    width: 29%;
+}
+
+
+/*imagen de ver Producto*/
+#fotoVer{
+    width: 30%;
+}
+
+#fotoVer:hover{
+    border: 2px solid red;
+    transition: 2s all;
+    width: 35%;
+}
+
+/*cuerpo*/
+body {
+    background-color: rgb(235, 243, 243);
+    font-size: 16px;
+}
+
+#documento {
+    margin: 0 auto;
+    background-color: #f3e7c6;
+    width: 800px;
+    border-radius: 30px ;
+}
+
+/*productos INDEX*/
+.productos {
+    border-radius: 8px;
+    color: red;
+    text-align: center;
+    float: left;
+    width: 30%;
+    margin: 1%;
+    border: 1px solid purple;
+    background-color: rgb(232, 203, 181);
+    font-weight: bold;
+    transition: 2s all;
+
+}
+
+.productos:hover {
+    transition: 2s all;
+    box-shadow: 10px 5px 5px   #14e737;
+}
+
+
+
+.productos > img {
+    width: 80px;
+    height: 100px;
+}
+
+.comprar {
+    border-radius: 20px;
+    background-color: rgb(207, 78, 78);
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.comprar:active {
+    background-color: rgb(48, 177, 177);
+    color: black;
+    
+}
+
+
+.select, .select *{
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+}
+
+
+
+#cabecera {
+    background-color: #14e737;
+    padding: 5px;
+}
+
+#cabecera #logo {
+    width: 75px;
+    height: 50px;
+}
+
+#cabecera #titulo {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+#barraMenu{
+     background-color: #1fe2e2;
+}
+#barraMenu ul{
+    list-style-type: none;
+    padding: 2px 5px;
+    margin: 0px; 
+}
+#barraMenu li{
+    display: inline;
+    font-weight: bold;
+    font-size: small;
+  
+}
+
+#barraMenu li:hover{
+    color: white;
+    background-color: darkblue;
+    font-weight: bold;
+}
+
+#barraMenu ul a{
+    font-size: small;
+    text-decoration: none;
+    background-color: #1fe2e2;
+    color: black;
+    padding: 2px 10px 2px 10px;
+    font-weight: bold;
+}
+
+#barraMenu ul a:hover{
+ 
+    background-color: #f8b118;
+    color: red;
+    font-size: 0.9em;
+    transition: 2s all;
+}
+#barraMenu ul a:visited{
+
+    color: black;
+}
+#barraMenu ul a:visited:hover{
+
+    color: red;
+}
+
+
+
+#barraLogin{
+
+}
+
+#barraUbicacion{
+    background-color: rgb(255, 185, 56);
+}
+
+.boton {
+    background-color: blue;
+    color: white;
+    border: thin black solid;
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.boton a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.boton:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.tabla {
+    width: 100%;
+    background-color: lightblue;
+}
+
+.tabla, .tabla th, .tabla td {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.tabla th {
+    
+    background-color: teal;
+    color: blue;
+}
+
+.tabla tr:hover{
+    color: white;
+    transition: 2s all;
+    background-color: lightsalmon;
+}
+
+.tabla tr:active{
+    background-color: blue;
+}
+
+#pie {
+    background-color: #81e714;
+    color: blue;
+    font-size: 1.5 em;
+    padding: 5px;
+}
+
+.for_texto {
+    border: blue thin solid;
+    background-color: white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.error {
+    background-color: white;
+    color: red;
+    border: thin solid red;
+    padding: 5px;
+}

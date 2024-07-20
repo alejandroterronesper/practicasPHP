@@ -1,0 +1,606 @@
+@media screen {
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	#todo {
+		width: 90%;
+		margin: 0 auto;
+
+	}
+
+	header {
+		background: rgb(224, 227, 240);
+		min-height: 50px;
+		padding-top: 5px;
+		border-radius: 15px 15px 0 0;
+		border-top: 3px ridge rgb(225, 137, 137);
+		border-left: 3px ridge rgb(96, 37, 37);
+		border-right: 3px ridge rgb(100, 100, 100);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#divLogin {
+		border-left: 3px ridge rgb(100, 100, 100);
+		border-right: 3px ridge rgb(100, 100, 100);
+	}
+
+	nav,
+	#barraLocalizacion {
+		border-left: 3px ridge rgb(193, 14, 14);
+		border-right: 3px ridge rgb(100, 100, 100);
+	}
+
+	#barraLocalizacion {
+		padding-top: 1%;
+		padding-bottom: 1%;
+
+		background-color: rgb(255, 185, 56);
+	}
+
+	#barraLocalizacion a {
+		border-radius: 10px;
+		text-decoration: none;
+		background-color: lightgreen;
+		text-transform: capitalize;
+		transition: 2s all;
+	}
+
+	#barraLocalizacion a:hover {
+		transition: 2s all;
+		font-size: large;
+	}
+
+
+	#barraLocalizacion a:visited {
+		color: red;
+
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0 1.75rem;
+		padding: 1rem 0;
+		background-color: rgb(110, 194, 234);
+	}
+
+	nav a {
+		font-size: small;
+		text-decoration: none;
+		background-color: #1fe2e2;
+		color: black;
+		padding: 2px 10px 2px 10px;
+		font-weight: bold;
+	}
+
+	nav a:hover {
+		color: white;
+		background-color: darkblue;
+		font-weight: bold;
+	}
+
+	header .logo {
+		width: 75px;
+		height: 75px;
+		padding-left: 5px;
+	}
+
+	header .logo img {
+		width: 75px;
+		height: 75px;
+	}
+
+
+	header .titulo {
+		padding-left: 5px;
+	}
+
+	#barraLogin {
+		/*width: 100%;*/
+		border-left: 3px rgb(100, 100, 100) solid;
+		border-right: 3px rgb(100, 100, 100) solid;
+		background: #ededed;
+
+	}
+
+	#barraLogin a {
+		text-decoration: none;
+	}
+
+	#barraLogin a:active,
+	#barraLogin a:focus,
+	#barraLogin a:visited {
+		text-decoration: none;
+	}
+
+	header .titulo a,
+	header .titulo a:hover,
+	header .titulo a:visited {
+		text-decoration: none;
+		color: #7ad019;
+	}
+
+	header .titulo a h1 {
+		text-shadow: 0px 0px 7px #4a2f02;
+	}
+
+	footer {
+		background-color: #46d2d2;
+		border-left: 3px rgb(100, 100, 100) solid;
+		border-right: 3px rgb(100, 100, 100) solid;
+		border-bottom: 3px rgb(100, 100, 100) solid;
+		border-radius: 0 0 15px 15px;
+		padding: 5px 5px;
+	}
+
+	footer h2 {
+		color: #56391a;
+	}
+
+	footer h2 span {
+		font-size: 1.3rem;
+		margin: 0 0.6rem;
+	}
+
+	.contenido {
+		background-color: #b3dff9;
+		border-left: 3px solid rgb(100, 100, 100);
+		border-right: 3px solid rgb(100, 100, 100);
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+		padding: 0.5rem 0;
+	}
+
+	aside {
+		background: #e1dfff;
+		margin: 5px;
+		max-width: 200px;
+		border: solid thin black;
+		border-radius: 5px;
+		flex: 1 1 20%;
+	}
+
+	article {
+		margin: 5px;
+		flex: 1 1 80%;
+	}
+
+	aside>ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 0.2em;
+		display: flex;
+		flex-direction: column;
+	}
+
+	aside ul li {
+		flex: 1 1;
+		text-decoration: none;
+		list-style-type: none;
+		transition: font-size 0.7s;
+		color: #092e4e;
+	}
+
+	aside ul li:hover {
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+
+	aside li a {
+		display: block;
+		text-decoration: none;
+		color: #999999;
+		text-align: center;
+		line-height: 40px;
+
+	}
+
+	aside li a:hover {
+		text-decoration: none;
+		color: #092e4e;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	aside li a:active,
+	aside li a:focus,
+	aside li a:visited {
+		text-decoration: none;
+	}
+
+
+	p {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	div.flotante {
+		float: left;
+		min-width: 300px;
+		border: 1px solid #999999;
+		margin: 3px;
+		padding: 5px;
+	}
+
+	.error {
+		background-color: white;
+		color: red;
+		border: thin solid red;
+		padding: 5px;
+	}
+
+	#logo_pag_error {
+		width: 50px;
+		height: 50px;
+	}
+
+	#mensaje_pag_error {
+		font-size: x-large;
+	}
+
+	article div.par {
+		background-color: #52e0cb;
+		color: black;
+	}
+
+	article div.impar {
+		background-color: blue;
+		color: white;
+	}
+
+
+	.pager {
+		background-color: white;
+		color: black;
+	}
+
+	.pager .izq {
+		float: left;
+		/*width: 40%;*/
+		padding-left: 5px;
+		color: green;
+	}
+
+	.pager .der {
+		float: right;
+		/*width: 58%;*/
+		text-align: right;
+		padding-right: 5px;
+	}
+
+	.pager .der a {
+		text-decoration: none;
+		color: green;
+	}
+
+	.pager .der a:hover {
+		text-decoration: none;
+		color: red;
+	}
+
+	.pager .final {
+		clear: both;
+	}
+
+	/*definiciones de tabla para
+	 * el objeto CGrid con el estilo
+	 * por defecto clase tabla
+	 */
+
+	div.tabla {
+		width: 100%;
+		overflow: auto;
+	}
+
+	div.tabla table.tabla {
+		background-color: #b6c7cd;
+		border-collapse: collapse;
+	}
+
+	div.tabla table.tabla th {
+		background-color: blue;
+		color: white;
+	}
+
+	div.tabla table.tabla tr.par {
+		background-color: #edd8d8;
+		color: black;
+	}
+
+	div.tabla table.tabla tr.impar {
+		background-color: #f8f0d6;
+		color: black;
+	}
+
+	div.tabla table.tabla tr td {
+		padding: 2px;
+	}
+
+	/*
+	 * Definiciones de tabla para
+	 * el objeto CGrid con estilo 
+	 * propio
+	 */
+	table.tabla1 {
+		background-color: #b6c7cd;
+		border-collapse: collapse;
+	}
+
+	table.tabla1 th {
+	
+		background-color: blue;
+		color: white;
+	}
+
+	table.tabla1 tr.par {
+		background-color: #edd8d8;
+		color: black;
+	}
+
+	table.tabla1 tr.impar {
+		background-color: #f8f0d6;
+		color: black;
+	}
+
+	table.tabla1 tr td {
+		padding: 2px;
+	}
+
+
+	/*
+	 * Definiciones de estilo para
+	 * el objeto CCaja con estilo 
+	 * propio
+	 */
+
+	.caja {
+		background-color: #ef9b17;
+		color: #118ef8;
+	}
+
+	.caja .titulo {
+		border: thin red solid;
+		padding: 3px;
+	}
+
+	.caja .cuerpo {
+		border: thin red solid;
+		padding: 3px;
+		background-color: #ffe3ae;
+	}
+
+	.cimg {
+		color: rgb(245, 104, 69);
+		background-color: #cfdfee;
+		border: 2px solid black;
+	}
+
+	.cimg .cimg_tit {
+		text-align: center;
+		font-weight: bold;
+		font-style: italic;
+		font-size: medium;
+	}
+
+
+
+	.parcial {
+		border: blue solid thin;
+		margin: 5px;
+		display: inline-block;
+		background-color: lightblue;
+	}
+
+	/*fuente para el texto*/
+	* {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+	/*logo*/
+	.logo {
+		border-radius: 20px;
+		animation: animacion 5s infinite;
+		/*animacion para girar toda la imagen*/
+	}
+
+	.logo:hover {
+		animation: animacionHover 5s infinite;
+		/*animacion para girar toda la imagen*/
+	}
+
+	@keyframes animacion {
+
+		/*animacion para rotar logo del header*/
+		0% {
+			transform: rotateY(0deg);
+			/*primer fotograma*/
+		}
+
+		100% {
+			transform: rotateY(365deg);
+			/*ultimo fotograma*/
+		}
+	}
+
+
+	@keyframes animacionHover {
+
+		/*animacion para rotar logo del header*/
+		0% {
+			transform: rotateX(0deg);
+			/*primer fotograma*/
+		}
+
+		100% {
+			transform: rotateX(365deg);
+			/*ultimo fotograma*/
+		}
+	}
+
+	/*estilo formularios */
+	.formulario input:hover {
+		border-color: red;
+	}
+
+	.formulario fieldset {
+		background-color: lightblue;
+		border-radius: 20px;
+	}
+
+	.formulario legend {
+		background-color: white;
+		border: black solid 1px;
+		border-radius: 5px;
+	}
+
+
+	button {
+		background-color: blue;
+		color: white;
+		border: thin black solid;
+	}
+
+	button a {
+		text-decoration: none;
+		color: white;
+	}
+
+	button a:visited {
+		text-decoration: none;
+		color: white;
+	}
+
+	button a:hover {
+		background-color: cyan;
+		color: black;
+	}
+
+	button:hover {
+		background-color: cyan;
+		color: black;
+	}
+
+
+	input[type="submit"],
+	input[type="reset"] {
+		border-radius: 20px;
+		background-color: rgb(207, 78, 78);
+		color: white;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	/*productos INDEX*/
+	.productos {
+		border-radius: 8px;
+		color: red;
+		text-align: center;
+		float: left;
+		width: 30%;
+		margin: 1%;
+		border: 1px solid purple;
+		background-color: rgb(232, 203, 181);
+		font-weight: bold;
+		transition: 2s all;
+
+	}
+
+	.productos:hover {
+		transition: 2s all;
+		box-shadow: 10px 5px 5px #14e737;
+	}
+
+
+
+	.productos>img {
+		width: 80px;
+		height: 100px;
+	}
+
+	/*FOTOS DE LOS PRODUCTOS PARA VER, MODIFICAR, ELIMINAR*/
+	/*imagen de ver Producto*/
+	#fotoVer {
+		width: 30%;
+	}
+
+	#fotoVer:hover {
+		border: 2px solid red;
+		transition: 2s all;
+		width: 35%;
+	}
+
+
+	.tabla {
+		width: 100%;
+		background-color: lightblue;
+	}
+
+	.tabla,
+	.tabla th,
+	.tabla td {
+		border-collapse: collapse;
+		border: 2px solid black;
+	}
+
+	.tabla th {
+
+		background-color: teal;
+		color: blue;
+	}
+
+	.tabla tr:hover {
+		color: white;
+		transition: 2s all;
+		background-color: lightsalmon;
+	}
+
+	.tabla tr:active {
+		background-color: blue;
+	}
+
+	.caja
+	{
+		
+		background-color: #ef1751;
+		color: #0d2132;
+	}
+	.caja .titulo
+	{
+		border: thin red solid;
+		padding: 3px;
+	}
+	#cajaForm{
+		display:  "block";
+	}
+	.caja .cuerpo
+	{
+
+		border: thin red solid;
+		padding: 3px;
+		background-color: #ffe3ae;
+	}
+}
+
+
+.misFotos {
+	width: 10%;
+	height: 10%;
+}
+
+@media screen and (max-width:400px) {
+	.contenido {
+		flex-direction: column;
+	}
+
+	nav {
+		max-width: 100%;
+	}
+}

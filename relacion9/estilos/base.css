@@ -1,0 +1,108 @@
+@charset "UTF8";
+
+body {
+    background-color: rgb(169, 206, 206);  /*Ctrl + F5*/ 
+    font-size: 16px;
+}
+
+#documento {
+    margin: 0 auto;
+    background-color: #d4a65f;
+    width: 700px;
+    border-radius: 30px ;
+    padding: 1%;
+}
+
+li{
+    list-style: none;
+    background-color: rgb(182, 165, 199);
+    width: fit-content;
+    padding: 0 1%;
+    color: white;
+}
+
+#cabecera {
+    background-color: #14e737;
+    padding: 5px;
+}
+
+#cabecera #logo {
+    width: 75px;
+    height: 50px;
+}
+
+#cabecera #titulo {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.boton {
+    background-color: blue;
+    color: white;
+    border: thin black solid;
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.boton a:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.boton:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    background-color: white;
+}
+
+.tabla th {
+    background-color: teal;
+    color: blue;
+}
+
+.tabla tr.par {
+    background-color: black;
+    color: white;
+
+}
+
+/*
+.tabla tr.impar{
+
+}*/
+
+#pie {
+    background-color: #81e714;
+    color: blue;
+    font-size: 1.5 em;
+    padding: 5px;
+}
+
+.for_texto {
+    border: blue thin solid;
+    background-color: white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.error {
+    background-color: white;
+    color: red;
+    border: thin solid red;
+    padding: 5px;
+}
